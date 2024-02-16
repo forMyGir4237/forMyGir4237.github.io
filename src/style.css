@@ -1,0 +1,377 @@
+* {
+    overflow-y:hidden;
+    overflow-x:hidden;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+body{
+    
+    margin: 0;
+    font-family: arial;
+    color: white;
+}
+
+.slide{
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.29);
+    height: calc(100vh - 54px);
+    width: calc(100vw - 14px);
+    background: rgb(133, 81, 47);
+    border: 7px solid white;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 0;
+    transition-duration: 1s;
+    /* display: none; */
+}
+.animation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 7px solid white;
+    border-bottom: 7px solid white;
+    border-radius: 16px;
+    height: 90%;
+    width: 90%;
+}
+.first_slide{
+    height: calc(100vh - 14px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* display: none; */
+}
+
+.arrow{
+    color: white;
+    font-size: 18pt;
+    margin: 10px;
+    font-weight: 600;
+}
+.second_slide{
+    background-image: url(../photoes/heart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+pre{
+    height: 100%;
+    width: 100vw;
+    display: block;
+    scale: 110%;
+    /* padding-right: 22%; */
+}
+.s3_slide{
+    z-index: 8;
+    display: flex;
+    align-items: center;
+}
+.s3_slide p {
+    padding: 0 3% 0 3%;
+    font-size: 160%;
+    font-family: "Marck Script", cursive;
+      font-weight: 400;
+  font-style: normal;
+
+}
+.s4_slide{
+    z-index: 7;
+    background-image: url(../photoes/cat1.jpg);
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.s5_slide{
+    
+    /* position: relative; */
+    z-index: 6;
+
+    display: block;
+}
+.s5_slide > h2{
+    text-align: center;
+    padding-top: 45px;
+}
+.freezer{
+    display: block;
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    background-image: url(../photoes/freezer.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    bottom: 1%;
+    left: 93%;
+}
+.freezer_inf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17%;
+    width: 20vh;
+    z-index: 7;
+    position: absolute;
+    background: rgb(133, 81, 47);
+    border: 7px solid white;
+    border-radius: 16px;
+    bottom: 5%;
+    left: 100%;
+    transition-duration: 0.3s;
+
+}
+.freezer_inf>p{
+    text-align: center;
+    margin: 0;
+}
+.freezer_inf_opened{
+    left: 50%;
+}
+.sticks{
+    padding-top: 3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+}
+.sticks>*{
+
+    width: 50%;
+    z-index: 7;
+    transition-duration: 0.6s;
+
+    height: 28%;
+}
+/* .sticks>*:hover{
+    background-color: rgba(146, 146, 146, 0.3);
+    scale: 1.3;
+    z-index: 8;
+    margin-right: 0;
+    margin-left: 0;
+    rotate: 0deg;
+    
+} */
+
+.stick1{
+    margin-right: 20%;
+    rotate: -7deg;
+
+    
+    background-image: url(../photoes/sticks/1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+.stick2{
+    margin-left: 35%;
+    rotate: 4deg;
+
+    background-image: url(../photoes/sticks/4.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+
+.stick3{
+    position: absolute;
+    top: 69%;
+    margin-right: 40%;
+    rotate: -3deg;
+    background-image: url(../photoes/sticks/5.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+.s6_slide{
+    z-index: 5;
+    height: calc(100vh - 84px);
+    background-image: url(../photoes/cat2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.s7_slide{
+    z-index: 4;
+    background-image: url(../photoes/loveU.gif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+.s8_slide{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+}
+.s8_slide h2{
+    text-align: center;
+    z-index: 3;
+}
+.s8_slide div{
+    
+}
+.phot_cont{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.phot_cont div{
+   transition-duration: 0.5s;
+   
+}
+.img_1{
+    background-image: url(../photoes/our/1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    rotate: 4deg;
+    height: 40%;
+    width: 40%;
+
+}
+.img_2{
+    background-image: url(../photoes/our/2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-right: 18%;
+    rotate: -2deg;
+    height: 50%;
+    width: 40%;
+
+}
+.s9_slide{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.s9_slide h2{
+    text-align: center;
+}
+.img_3{
+    background-image: url(../photoes/our/3.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    rotate: 4deg;
+    height: 40%;
+    margin-right: 18%;
+    width: 40%;
+}
+.img_4{
+    background-image: url(../photoes/our/4.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    rotate: -7deg;
+    height: 70%;
+    width: 60%;
+    scale: 0.9;
+}
+.s10_slide{
+    z-index: 1;
+    padding-top: 39%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s10_slide h2{
+    padding: 0 3% 0 3%;
+   text-align: center;
+   font-size: 160%;
+}
+.bernard{
+    transition-duration: 1s;
+    position: absolute;
+    background: rgb(133, 81, 47);
+    border: 7px solid white;
+    border-radius: 16px;
+    width: 55%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    left: 100%;
+
+}
+.bernard p{
+    text-align: center;
+    font-size: 110%;
+}
+.bernard_p{
+    background-image: url(../photoes/Bernard.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    height: 80%;
+    width: 100%;
+}
+@media screen and (max-width: 550px){
+    .s3_slide p {
+        padding: 0 3% 0 3%;
+        font-size: 140%;
+       
+    
+    }
+}
+@media screen and (max-width: 430px){
+    .s3_slide p {
+        padding: 0 3% 0 3%;
+        font-size: 120%;
+    }
+    pre{
+        scale: 70%;
+    }
+    .s5_slide{
+        height: calc(100vh - 84px);
+    }
+}
+@media screen and (min-width: 700px){
+    pre{
+        scale: 190%;
+    }
+    .s10_slide h2{
+       font-size: 220%;
+    }
+    
+}
+@media screen and (min-width: 1300px){
+    .s3_slide p {
+        padding: 0 3% 0 3%;
+        font-size: 235%;
+    }
+    .sticks>*{
+        width: 40%;
+        height: 36%;
+    }
+    .stick3{
+        top: 60%;
+        right: 15%;
+    }
+    pre{
+        scale: 230%;
+    }
+    .s10_slide h2{
+        font-size: 290%;
+     }
+    .bernard{
+        height: 30%;
+        font-size: 180%;
+     }
+}
+
